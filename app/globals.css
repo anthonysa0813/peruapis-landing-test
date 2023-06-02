@@ -2,6 +2,119 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "aeonik";
+  src: url("../fonts/AeonikTRIAL-Bold.otf");
+}
+
+@font-face {
+  font-family: "aeonik";
+  src: url("../fonts/AeonikTRIAL-Regular.otf");
+}
+
+.bg-honda {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* .bg-honda::before {
+  width: 40vw;
+  height: 40vw;
+  overflow: visible;
+  background: linear-gradient(
+    131.5deg,
+    #111728 48.9%,
+    rgba(17, 23, 39, 0) 82.15%
+  );
+  filter: blur(10px);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 70;
+  z-index: 10;
+
+} */
+
+.honda-animation {
+  width: 27vw;
+  height: 27vw;
+  background: 0 0;
+  position: absolute;
+  border-radius: 999em;
+  z-index: 0;
+  border: 4px solid #b82749;
+  left: -10vw;
+  top: -10vw;
+  opacity: 0.2;
+  animation: pulse 4s ease-in-out 2s infinite alternate both;
+}
+
+.honda-animation1 {
+  width: 33vw;
+  height: 33vw;
+  background: 0 0;
+  position: absolute;
+  border-radius: 999em;
+  z-index: 0;
+  border: 4px solid #b82749;
+  left: -10vw;
+  top: -10vw;
+  opacity: 0.2;
+  animation: pulse 4s ease-in-out 2s infinite alternate both;
+}
+
+.honda-animation2 {
+  width: 27vw;
+  height: 27vw;
+  background: 0 0;
+  position: absolute;
+  border-radius: 999em;
+  z-index: 0;
+  border: 4px solid #b82749;
+  right: -10vw;
+  bottom: -10vw;
+  overflow: hidden;
+  opacity: 0.2;
+  animation: pulse 4s ease-in-out 2s infinite alternate both;
+}
+
+.honda-animation3 {
+  width: 33vw;
+  height: 33vw;
+  background: 0 0;
+  position: absolute;
+  border-radius: 999em;
+  z-index: 0;
+  border: 4px solid #b82749;
+  right: -10vw;
+  bottom: -10vw;
+  opacity: 0.2;
+  animation: pulse 4s ease-in-out 2s infinite alternate both;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.borderThin {
+  border-bottom: 0.2px solid #6e6e6e;
+  /* margin-block: 2rem; */
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
